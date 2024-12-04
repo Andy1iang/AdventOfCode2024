@@ -14,7 +14,7 @@ for seg in segments:
     pattern = r'mul\(\d{1,3},\d{1,3}\)'
     matches = re.findall(pattern, seg)
     for match in matches:
-        total += int(match.split('(')[1].split(',')[0]) * int(match.split(',')[1].split(')')[0])
+        total += int(match.split('(')[1].split(',')[0]) * \
+            int(match.split(',')[1].split(')')[0])
 
 print(total)
-

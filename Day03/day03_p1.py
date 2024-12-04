@@ -11,7 +11,7 @@ matches = re.findall(pattern, line)
 # calculating the total product
 total = 0
 for match in matches:
-    total += int(match.split('(')[1].split(',')[0]) * int(match.split(',')[1].split(')')[0])
+    total += int(match.split('(')[1].split(',')[0]) * \
+        int(match.split(',')[1].split(')')[0])
 
 print(total)
-
